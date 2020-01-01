@@ -8,7 +8,7 @@ import PKG from './package.json';
 
 const SRC_DIR  = './src';
 const DIST_DIR = './bundle';
-const ZIP_BUNDLE = './bundle.zip';
+const ZIP_BUNDLE = `./${PKG.name}.zip`;
 
 /************************
 * Build script plugins
@@ -50,15 +50,16 @@ const mainConfig = {
                 // Copy assets to bundle folder
                 { src: toSrcDir('assets/images/*'), dest: toDistDir('assets/images') },
                 { src: toSrcDir('assets/fonts/*'),  dest: toDistDir('assets/fonts')  },
+                { src: toSrcDir('assets/js/*'),     dest: toDistDir('assets')        },
                 
                 // Copy templates to bundle folder
-                { src: toSrcDir('templates/*'),     dest: toDistDir()               },
-                { src: toSrcDir('partials'),        dest: toDistDir()               },
+                { src: toSrcDir('templates/*'),     dest: toDistDir() },
+                { src: toSrcDir('partials'),        dest: toDistDir() },
 
-                { src: 'package.json',              dest: toDistDir()               },
+                { src: 'package.json',              dest: toDistDir() },
             ]
         }),
-        zipper(toDistDir(), `./${PKG.name}.zip`)
+        zipper(toDistDir(), ZIP_BUNDLE)
     ]
 };
 

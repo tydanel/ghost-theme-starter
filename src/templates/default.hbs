@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "main.css"}}" />
 
     <title>{{meta_title}}</title>
 
@@ -79,7 +79,7 @@
 <script>
     var maxPages = parseInt('{{pagination.pages}}');
 </script>
-<script src="{{asset "built/infinitescroll.js"}}"></script>
+<script src="{{asset "infinitescroll.js"}}"></script>
 {{/if}}
 
 <script>
@@ -92,7 +92,7 @@ $(document).ready(function () {
 </script>
 
 {{#is "post, page"}}
-<script src="{{asset "built/jquery.fitvids.js"}}"></script>
+<script src="{{asset "jquery.fitvids.js"}}"></script>
 <script>
 var images = document.querySelectorAll('.kg-gallery-image img');
 images.forEach(function (image) {
