@@ -1,6 +1,6 @@
 # ghost-theme-starter
 
-This is essentially (TryGhost/Starter)[https://github.com/TryGhost/Starter] with rollup instead of gulp
+This is essentially [TryGhost/Starter](https://github.com/TryGhost/Starter) with rollup instead of gulp
 
 
 ## Getting started
