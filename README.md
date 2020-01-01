@@ -5,7 +5,7 @@ This is essentially [TryGhost/Starter](https://github.com/TryGhost/Starter) with
 
 ## Getting started
 
-`git clone https://github.com/tydanel/ghost-theme-starter.git`
-`npm install`
-`npm run build`
+* `git clone https://github.com/tydanel/ghost-theme-starter.git`
+* `npm install`
+* `npm run build`
 
